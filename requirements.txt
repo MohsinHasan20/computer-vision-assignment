@@ -1,0 +1,20 @@
+# Computer Vision Individual Assignment Dependencies
+# Supported Python Versions: 3.10, 3.11, 3.12, 3.13, 3.14
+
+# Core numerical computing & array manipulation
+numpy>=1.24.0
+
+# OpenCV (Computer Vision library for image processing, filtering, morphology, SIFT, Haar cascades, video optical flow)
+opencv-python>=4.8.0,<5.0.0
+
+# Scientific plotting and figure generation for technical report outputs
+matplotlib>=3.7.0
+
+# Image restoration metrics (PSNR, SSIM) and feature extraction (HOG)
+scikit-image>=0.21.0
+scipy>=1.10.0
+
+# Deep learning framework and state-of-the-art YOLO object detector (Task 3)
+ultralytics>=8.0.0
+torch>=2.0.0
+torchvision>=0.15.0

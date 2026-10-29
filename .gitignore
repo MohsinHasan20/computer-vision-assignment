@@ -1,0 +1,71 @@
+# ==============================================================================
+# .gitignore - Computer Vision Project
+# ==============================================================================
+# WHAT GOES TO GIT VS WHAT GOES TO GOOGLE DRIVE:
+#
+# Track in Git (Submit to Repository):
+#   - Source code (src/*.py, main.py)
+#   - Project documentation (README.md, requirements.txt, .gitignore)
+#   - Input instructions (inputs/README.md)
+#   - Report templates & outlines (report/*.md)
+#   - Directory placeholders (.gitkeep)
+#
+# DO NOT Track in Git (Upload to Google Drive / Keep Local):
+#   - Personal raw photos and videos (inputs/photo_original.jpg, etc.)
+#   - Large video files (*.mp4, *.avi, *.mov)
+#   - Deep learning model weights (*.pt, *.pth, *.onnx, yolov8n.pt)
+#   - Heavy generated outputs (*.png, *.jpg, *.csv, *.json)
+# ==============================================================================
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE & Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating system files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# User-provided personal media in inputs/ (preserve inputs/README.md)
+inputs/*.jpg
+inputs/*.jpeg
+inputs/*.png
+inputs/*.mp4
+inputs/*.mov
+inputs/*.avi
+inputs/*.mkv
+inputs/*.webm
+
+# Pretrained deep learning model weights
+*.pt
+*.pth
+*.onnx
+*.weights
+*.bin
+yolov8*.pt
+yolo11*.pt
+
+# Generated outputs (preserve folder structure via .gitkeep)
+outputs/**/*
+!outputs/**/.gitkeep
+!outputs/.gitkeep
